@@ -16,14 +16,84 @@ struct TwitterProfileClone: View {
                 editProfileAndBell
                 
                 profileInfo
-                                
-            
+                
+                Divider()
+                
+                cardView
             }
         }
         .ignoresSafeArea(edges: .top)
     }
     
+    
     // attributes definition
+    
+    var cardView: some View {
+        VStack {
+            // button info profile horizontal
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .center , spacing: 35) {
+                    Button {
+                        // put an action in here
+                    } label: {
+                        Text("Posts")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                    }
+                    
+                    Button {
+                        // put an action in here
+                    } label: {
+                        Text("Replies")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            
+                    }
+                    
+                    Button {
+                        // put an action in here
+                    } label: {
+                        Text("Highlights")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            
+                    }
+
+                    Button {
+                        // put an action in here
+                    } label: {
+                        Text("Media")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            
+                    }
+
+                    Button {
+                        // put an action in here
+                    } label: {
+                        Text("Likes")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            
+                    }
+                }
+                .padding(.horizontal, 15)
+                .padding(.vertical,5)
+            }
+            
+            Divider()
+            
+            // card info
+            ForEach(0..<10) { Items in
+                VStack {
+                    captionCard()
+                }
+            }
+
+        }
+
+    }
+    
     var headerView: some View {
         ZStack(alignment: .bottomLeading) {
             Color.blue
@@ -166,8 +236,65 @@ struct TwitterProfileClone: View {
     }
 }
 
+struct captionCard: View {
+    var body: some View {
+        HStack {
+            Image("Image-2")
+                .resizable()
+                .frame(width: 55, height: 55)
+                .clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                HStack(spacing: 3){
+                    Text("Heath Ledgers")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                    
+                    Text("@ledgerss")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                        .fontWeight(.light)
+                    
+                    Spacer()
+                }
+                
+                Text("siap sedia tiap ku bercerita. kuberuntung jadi anakmu bunda")
+                    .font(.system(size: 15))
+                    .fontWeight(.medium)
+                
+                
+                HStack {
+                    Image(systemName: "bubble.left")
+                    Spacer()
+                    Image(systemName: "arrow.2.squarepath")
+                    Spacer()
+                    Image(systemName: "heart")
+                    Spacer()
+                    Image(systemName: "paperplane")
+                }
+                .padding(.vertical, 2)
+                
+            }
+            .frame(width: 290)
+            
+            Spacer()
+            Image(systemName: "ellipsis")
+                .offset(y: -35)
+        }
+        .frame(width: .infinity)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 3)
+        Divider()
+
+    }
+}
+
+// display preview.
 struct TwitterProfileClone_Previews: PreviewProvider {
     static var previews: some View {
         TwitterProfileClone()
     }
 }
+
+
+

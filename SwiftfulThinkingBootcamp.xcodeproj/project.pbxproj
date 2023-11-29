@@ -17,6 +17,7 @@
 		C630DA1E2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630DA1D2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift */; };
 		C632F1292B10E99C00468380 /* ButtonBootcamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C632F1282B10E99C00468380 /* ButtonBootcamps.swift */; };
 		C6450BE72B0E5FF100EA06CA /* ButtonBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450BE62B0E5FF100EA06CA /* ButtonBootcamp.swift */; };
+		C645117C2B17965B00C41007 /* IfElseStatementBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645117B2B17965B00C41007 /* IfElseStatementBootcamp.swift */; };
 		C665E6D92B075B8C0043C1A8 /* ForEachLoopsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C665E6D82B075B8C0043C1A8 /* ForEachLoopsBootcamp.swift */; };
 		C6A69EDD2B03CA6B00613484 /* ZstackVstackHstackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A69EDC2B03CA6B00613484 /* ZstackVstackHstackBootcamp.swift */; };
 		C6B3A2912B07DE67008491B8 /* LazyVgGridBootamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3A2902B07DE67008491B8 /* LazyVgGridBootamps.swift */; };
@@ -48,6 +49,7 @@
 		C630DA1D2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractingSubViewsBootcamp.swift; sourceTree = "<group>"; };
 		C632F1282B10E99C00468380 /* ButtonBootcamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBootcamps.swift; sourceTree = "<group>"; };
 		C6450BE62B0E5FF100EA06CA /* ButtonBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBootcamp.swift; sourceTree = "<group>"; };
+		C645117B2B17965B00C41007 /* IfElseStatementBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfElseStatementBootcamp.swift; sourceTree = "<group>"; };
 		C665E6D82B075B8C0043C1A8 /* ForEachLoopsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachLoopsBootcamp.swift; sourceTree = "<group>"; };
 		C6A69EDC2B03CA6B00613484 /* ZstackVstackHstackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZstackVstackHstackBootcamp.swift; sourceTree = "<group>"; };
 		C6B3A2902B07DE67008491B8 /* LazyVgGridBootamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVgGridBootamps.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				C630DA1B2B14FB7800E98CDC /* ExtractingFunctionBootcamp.swift */,
 				C630DA1D2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift */,
 				C60B68B42B163B3300C557D0 /* BindingBootcamp.swift */,
+				C645117B2B17965B00C41007 /* IfElseStatementBootcamp.swift */,
 			);
 			path = BootcampSwiftUI;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				C61C69FF2B07B18B002CEB1E /* ScrollViewBootcamp.swift in Sources */,
 				C6EAFADA2AF67BB1006B03BA /* FrameBootcamp.swift in Sources */,
 				C665E6D92B075B8C0043C1A8 /* ForEachLoopsBootcamp.swift in Sources */,
+				C645117C2B17965B00C41007 /* IfElseStatementBootcamp.swift in Sources */,
 				C6DE299E2AF6528300CF3FF9 /* SystemIconsBootcamp.swift in Sources */,
 				C6FDC2DB2B05217F00864AC5 /* PaddingBootcamp.swift in Sources */,
 				C6EF66312AF3E6180043C16D /* ContentView.swift in Sources */,
