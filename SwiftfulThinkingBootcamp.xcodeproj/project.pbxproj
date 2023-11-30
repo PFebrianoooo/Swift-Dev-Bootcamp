@@ -13,6 +13,7 @@
 		C61314A32B0E4DBC000BC7E7 /* IgnnoreSafeAreaBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61314A22B0E4DBC000BC7E7 /* IgnnoreSafeAreaBootcamp.swift */; };
 		C61C69FF2B07B18B002CEB1E /* ScrollViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C69FE2B07B18B002CEB1E /* ScrollViewBootcamp.swift */; };
 		C6252ADC2B13BDB400B81397 /* StatePropertyBootcamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6252ADB2B13BDB400B81397 /* StatePropertyBootcamps.swift */; };
+		C6281E072B18F79A005DA924 /* EdLinkHomeClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6281E062B18F79A005DA924 /* EdLinkHomeClone.swift */; };
 		C630DA1C2B14FB7800E98CDC /* ExtractingFunctionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630DA1B2B14FB7800E98CDC /* ExtractingFunctionBootcamp.swift */; };
 		C630DA1E2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630DA1D2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift */; };
 		C632F1292B10E99C00468380 /* ButtonBootcamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C632F1282B10E99C00468380 /* ButtonBootcamps.swift */; };
@@ -45,6 +46,7 @@
 		C61314A22B0E4DBC000BC7E7 /* IgnnoreSafeAreaBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnnoreSafeAreaBootcamp.swift; sourceTree = "<group>"; };
 		C61C69FE2B07B18B002CEB1E /* ScrollViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewBootcamp.swift; sourceTree = "<group>"; };
 		C6252ADB2B13BDB400B81397 /* StatePropertyBootcamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePropertyBootcamps.swift; sourceTree = "<group>"; };
+		C6281E062B18F79A005DA924 /* EdLinkHomeClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdLinkHomeClone.swift; sourceTree = "<group>"; };
 		C630DA1B2B14FB7800E98CDC /* ExtractingFunctionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractingFunctionBootcamp.swift; sourceTree = "<group>"; };
 		C630DA1D2B15054900E98CDC /* ExtractingSubViewsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractingSubViewsBootcamp.swift; sourceTree = "<group>"; };
 		C632F1282B10E99C00468380 /* ButtonBootcamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBootcamps.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C60B68B82B16515200C557D0 /* TwitterProfileClone.swift */,
+				C6281E062B18F79A005DA924 /* EdLinkHomeClone.swift */,
 			);
 			path = CloneUi;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				C6450BE72B0E5FF100EA06CA /* ButtonBootcamp.swift in Sources */,
 				C6EF662F2AF3E6180043C16D /* SwiftfulThinkingBootcampApp.swift in Sources */,
 				C6B3A2912B07DE67008491B8 /* LazyVgGridBootamps.swift in Sources */,
+				C6281E072B18F79A005DA924 /* EdLinkHomeClone.swift in Sources */,
 				C632F1292B10E99C00468380 /* ButtonBootcamps.swift in Sources */,
 				C6EAFADC2AF68277006B03BA /* BackgorundAndOverlaysBootcamp.swift in Sources */,
 				C60B68B52B163B3300C557D0 /* BindingBootcamp.swift in Sources */,
