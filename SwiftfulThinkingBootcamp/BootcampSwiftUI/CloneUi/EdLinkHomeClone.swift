@@ -9,9 +9,61 @@ import SwiftUI
 
 struct EdLinkHomeClone: View {
     var body: some View {
+        TabView{
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+            
+            
+            
+            Text("Explore View")
+                .tabItem {
+                    Label("Explore", systemImage: "magnifyingglass")
+                }
+            
+            
+            
+            Text("ClassRoom")
+                .tabItem {
+                    Label("Class Room", systemImage: "person.3.fill")
+                }
+            
+            
+            
+            Text("Chat")
+                .tabItem {
+                    Label("Home", systemImage: "text.bubble.fill")
+                }
+            
+            
+            
+            Text("Account")
+                .tabItem {
+                    Label("Home", systemImage: "person.fill")
+                }
+        }
+        .tint(.green)
+        .background(Color.red)
+    }
+}
+
+struct EdLinkHomeClone_Previews: PreviewProvider {
+    static var previews: some View {
+        EdLinkHomeClone()
+    }
+}
+
+
+struct HomeView: View {
+    var body: some View {
         ZStack {
             Color("edlinkBackground")
                 .ignoresSafeArea()
+                .scaledToFit()
+                .frame(width: .infinity, height: 750, alignment: .top)
+    
+            
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
                     view1()
@@ -19,17 +71,18 @@ struct EdLinkHomeClone: View {
                     view2()
                     
                     view3()
+                    
+                    view4()
+                    
+                    view5()
+                    
+                    view6()
                                         
 
                 }
             }
         }
-    }
-}
 
-struct EdLinkHomeClone_Previews: PreviewProvider {
-    static var previews: some View {
-        EdLinkHomeClone()
     }
 }
 
@@ -261,6 +314,215 @@ struct view3: View {
         .background(
             Color.white
         )
+
+    }
+}
+
+
+struct view4: View {
+    var body: some View {
+        VStack (alignment: .leading, spacing: 15) {
+            HStack {
+                Text("Campus News")
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                
+                
+                Spacer()
+                
+                Button {
+                    // actions
+                } label: {
+                    HStack(spacing: 0) {
+                        Text("See All ")
+                        Image(systemName: "arrow.right")
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.green)
+                    .frame(width: 80, height: 25)
+                    .background(
+                        Color.green.opacity(0.2)
+                            .clipShape(Capsule())
+                    )
+
+                }
+
+            }
+            
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0..<5) { items in
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("jadwal kuliah fakultas teknik umj semester ganjil 2023/2024".capitalized)
+                                .font(.callout)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.green)
+                            
+                            Text("Assalamualaikum WR.WB. kepada YTH Bapak/Ibu Dosen, Mahasiswa/i. Kami Sampaikan Jadwal Kuliah untuk semester Ganjil 2023/2024")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 20)
+                        .multilineTextAlignment(.leading)
+                        .frame(width: 290, height: 150)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(lineWidth: 1)
+                        }
+
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 25)
+        .background(Color.white)
+
+    }
+}
+
+struct view5: View {
+    var body: some View {
+        VStack (alignment: .leading, spacing: 15) {
+            HStack {
+                Text("Helpdesk Edlink")
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                
+                
+                Spacer()
+                
+                Button {
+                    // actions
+                } label: {
+                    HStack(spacing: 0) {
+                        Text("See All ")
+                        Image(systemName: "arrow.right")
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.green)
+                    .frame(width: 80, height: 25)
+                    .background(
+                        Color.green.opacity(0.2)
+                            .clipShape(Capsule())
+                    )
+
+                }
+
+            }
+            
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0..<5) { items in
+                        VStack(alignment: .leading, spacing: 0) {
+                            Image("Image-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 250, height: 170)
+                            
+                            Spacer(minLength: 0)
+                            VStack(alignment: .leading ,spacing: 8) {
+                                Text("Gabung ke kelas yang sudah di tentukan sebelumnya".capitalized)
+                                    .font(.subheadline)
+                                    .fontWeight(.semibold)
+                                
+                                Text("Halo sobat setia EdLink! ada yang terbaru dari edlink yaitu penambahan fitur yang ada. untuk bisa bergabung ke kelas yang sudah di tentukan sebelummnya oleh dosen anda")
+                                    .font(.caption2 )
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 10)
+                            .multilineTextAlignment(.leading)
+                        }
+                        
+                        .frame(width: 250, height: 250)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(lineWidth: 1)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 25)
+        .background(Color.white)
+
+    }
+}
+
+struct view6: View {
+    var body: some View {
+        VStack (alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text("Helpdesk Edlink")
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                
+                
+                Text("Discover good news, stories about education world")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0..<5) { items in
+                        ZStack {
+                            Image("Image-4")
+                                .scaledToFit()
+                                .frame(width: 300, height: 300)
+                                .contrast(0.2)
+                            
+                            VStack {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    Text("Indonesia capai kesepakatan dengan china untuk menjual pesawat nr219".capitalized)
+                                        .font(.callout)
+                                        .fontWeight(.semibold)
+                                        .frame(width: .infinity, height: 70)
+                                    
+                                    Text("Good news from Radar Republika. Indonesia telah menandatangani kontrak kerja dengan tiongkok")
+                                        .font(.caption)
+                                        .frame(width: .infinity, height: 40)
+
+                                }
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 15)
+                                .padding(.vertical, 25)
+
+                                
+                                Button {
+                                    // actions
+                                } label: {
+                                    Text("Read More")
+                                        .font(.callout)
+                                        .foregroundColor(.white)
+                                        .frame(width: 120, height: 50)
+                                        .background(
+                                            Color.green
+                                                .cornerRadius(10)
+                                        )
+                                }
+                            }
+                            .frame(width: 300, height: 300)
+                        }
+                        .frame(width: 300, height: 300)
+                        .cornerRadius(10)
+
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 25)
+        .padding(.bottom, 25)
+        .background(Color.white)
 
     }
 }

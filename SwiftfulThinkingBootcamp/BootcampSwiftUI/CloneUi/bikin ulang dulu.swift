@@ -9,7 +9,10 @@ import SwiftUI
 
 struct bikin_ulang_dulu: View {
     var body: some View {
-     Text("hhk")
+        
+        VStack {
+            Image(systemName: "globe")
+        }
     }
 }
 
