@@ -60,9 +60,6 @@ struct HomeView: View {
         ZStack {
             Color("edlinkBackground")
                 .ignoresSafeArea()
-                .scaledToFit()
-                .frame(width: .infinity, height: 750, alignment: .top)
-    
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
