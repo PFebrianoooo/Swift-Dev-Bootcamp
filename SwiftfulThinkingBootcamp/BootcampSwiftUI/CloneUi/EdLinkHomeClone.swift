@@ -59,7 +59,6 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color("edlinkBackground")
-                .ignoresSafeArea()
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
@@ -79,6 +78,8 @@ struct HomeView: View {
                 }
             }
         }
+        .ignoresSafeArea(edges: .top)
+        
 
     }
 }
@@ -153,9 +154,10 @@ struct view1: View {
                 .cornerRadius(10)
 
             }
+            .padding(.top, 35)
             .padding(.horizontal, 10)
-            .padding(.vertical, 25)
-            .padding(.top, 10)
+            .padding(.vertical, 30)
+            
 
                 
     }
@@ -164,6 +166,8 @@ struct view1: View {
 
 struct view2: View {
     @State var background: Bool = false
+    @State private var isChanging: Bool = false
+    @State private var isChanging1: Bool = false
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading) {
@@ -179,27 +183,27 @@ struct view2: View {
             
             HStack(spacing: 5) {
                 Button {
-                    
+                    isChanging.toggle()
                 } label: {
                     Text("All Subject")
                         .font(.caption)
                         .fontWeight(.semibold)
-                        .foregroundColor(.white)
+                        .foregroundColor(isChanging ? Color.green : Color.white)
                         .frame(width: 110, height: 20)
-                        .background(
-                            Color.green
-                            .cornerRadius(10))
+                        .background(isChanging ? Color.white : Color.green)
+                        .cornerRadius(10)
                 }
                 
                 Button {
-                    // actions
+                    isChanging1.toggle()
                 } label: {
                     Text("Al Islam III")
                         .font(.caption)
                         .fontWeight(.semibold)
-                        .foregroundColor(.white)
+                        .foregroundColor(isChanging1 ? Color.white : Color.green)
                         .frame(width: 110, height: 20)
-                        .background(Color.green .cornerRadius(10))
+                        .background(isChanging1 ? Color.green : Color.white)
+                        .cornerRadius(10)
                 }
             }
             .padding(.horizontal, 10)
@@ -277,7 +281,7 @@ struct view3: View {
             Text("My Academic")
                 .font(.headline)
                 .fontWeight(.semibold)
-                .padding(.leading, 10)
+                .padding(.leading, 15)
             
             VStack(alignment: .leading, spacing: 0) {
                 HStack {
