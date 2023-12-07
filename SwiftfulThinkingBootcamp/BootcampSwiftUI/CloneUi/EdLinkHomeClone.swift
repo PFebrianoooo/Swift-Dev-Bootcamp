@@ -498,18 +498,23 @@ struct view6: View {
                                 .padding(.vertical, 25)
 
                                 
-                                Button {
-                                    // actions
-                                } label: {
-                                    Text("Read More")
-                                        .font(.callout)
-                                        .foregroundColor(.white)
-                                        .frame(width: 120, height: 50)
-                                        .background(
-                                            Color.green
-                                                .cornerRadius(10)
-                                        )
+                                HStack {
+                                    Spacer()
+                                    
+                                    Button {
+                                        // actions
+                                    } label: {
+                                        Text("Read More")
+                                            .font(.callout)
+                                            .foregroundColor(.white)
+                                            .frame(width: 120, height: 50)
+                                            .background(
+                                                Color.green
+                                                    .cornerRadius(10)
+                                            )
+                                    }
                                 }
+                                .padding(.horizontal, 10)
                             }
                             .frame(width: 300, height: 300)
                         }

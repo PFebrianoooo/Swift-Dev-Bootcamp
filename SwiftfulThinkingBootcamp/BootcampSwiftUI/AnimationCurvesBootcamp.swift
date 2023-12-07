@@ -11,7 +11,8 @@ struct AnimationCurvesBootcamp: View {
     
     @State var isAnimated: Bool = false
     let duration: Double = 10.0
-    @State var inputted: String = " "
+    @State var isButton: Bool = false
+    
     
     var body: some View {
         VStack {
@@ -93,6 +94,44 @@ struct AnimationCurvesBootcamp: View {
                 .onTapGesture {
                     isAnimated.toggle()
                 }
+                .padding(.bottom)
+            
+            
+            
+            // example of transitions
+            
+            VStack {
+                ZStack {
+                    isButton ? Color.black : Color.brown
+                        
+                    
+                    VStack {
+                        Circle()
+                            .frame(width: 20, height: 20)
+                            .offset(x: isButton ? -28 : 28)
+                            .foregroundColor(.white)
+                            .shadow(color: .gray, radius: 5)
+                            .padding(.horizontal, 30)
+                            .padding(.vertical, 2)
+                            .background(
+                                isButton ?
+                                Image("Image").resizable() : Image("Image-2").resizable())
+                            .clipShape(Capsule())
+                            .animation(Animation.easeInOut(duration: 0.5), value: isButton)
+                            .onTapGesture {
+                                isButton.toggle()
+                            }
+                        
+                    }
+                }
+                .animation(Animation.easeInOut(duration: 0.5), value: isButton)
+            }
+            .frame(width: 300, height: 300)
+            .cornerRadius(20)
+                
+            
+            
+            
             
             
         }
