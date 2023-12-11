@@ -117,7 +117,11 @@ struct AnimationCurvesBootcamp: View {
                                 isButton ?
                                 Image("Image").resizable() : Image("Image-2").resizable())
                             .clipShape(Capsule())
-                            .animation(Animation.easeInOut(duration: 0.5), value: isButton)
+                            .animation(Animation.spring(
+                                response: 0.5,
+                                dampingFraction: 0.8,
+                                blendDuration: 3.0),
+                                       value: isButton)
                             .onTapGesture {
                                 isButton.toggle()
                             }
