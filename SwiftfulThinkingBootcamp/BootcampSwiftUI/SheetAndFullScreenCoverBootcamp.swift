@@ -28,25 +28,25 @@ struct SheetAndFullScreenCoverBootcamp: View {
 
             
 //            learning material
-//            .sheet(isPresented: $showSheet) {
-//                // jangan gunakan if else statement di argument ini.
-//                // dan jangan pernah. Akan menghasilkan error saja.
-//                ViewSheets()
-//
-////                    .presentationDetents([.height(250), .medium])
-//                    .presentationDetents([.fraction(0.5), .large])
-//                    .presentationDragIndicator(.automatic)
-//            }
-            
-            .fullScreenCover(isPresented: $showSheet) {
-//                ViewSheets()
-                FullScreenCover()
-                
+            .sheet(isPresented: $showSheet) {
+                // jangan gunakan if else statement di argument ini.
+                // dan jangan pernah. Akan menghasilkan error saja.
+                ViewSheets()
+
+//                    .presentationDetents([.height(250), .medium])
                     .presentationDetents([.fraction(0.5), .large])
                     .presentationDragIndicator(.automatic)
-
-                    
             }
+            
+//            .fullScreenCover(isPresented: $showSheet) {
+////                ViewSheets()
+//                FullScreenCover()
+//
+//                    .presentationDetents([.fraction(0.5), .large])
+//                    .presentationDragIndicator(.automatic)
+//
+//
+//            }
             
             
             
