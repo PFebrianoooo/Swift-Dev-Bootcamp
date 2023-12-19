@@ -206,6 +206,7 @@ struct PickerBootcap_Previews: PreviewProvider {
  // penjelasan modifier
  default picker style adalah menuPickerStyle() / inlinePickerMenu()
  label berguna saat stylepicker menuPickerStyle()
+ .navogationtitle meruapakan picker style yang dapat digunakan berbarengan dengan navigationstack
  
  
  */
