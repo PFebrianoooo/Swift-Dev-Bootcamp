@@ -36,6 +36,13 @@ struct StatePropertyBootcamps: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width ,height: 400)
+                .onTapGesture(count: 2) {
+                    withAnimation(Animation.easeOut) {
+                        image = "heart.fill"
+                        colors = .red
+                        count += 1
+                    }
+                }
             
             
             HStack {
