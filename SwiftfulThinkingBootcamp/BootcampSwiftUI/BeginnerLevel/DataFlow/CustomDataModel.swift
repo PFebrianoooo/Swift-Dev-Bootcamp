@@ -17,9 +17,8 @@ struct UserModel: Identifiable {
 
 struct customModelData: View {
     @State private var listUsers: [UserModel] = [
-//    "Putra", "Epinn", "Panji", "Fajri"
         UserModel(name: "Putra Pebriano", userName: "P.Febrianoo_", followersCount: 400, isVerified: true),
-        UserModel(name: "Epinn", userName: "Epinn_.", followersCount: 700, isVerified: true),
+        UserModel(name: "Bagoes Baihaqi", userName: "bagoes.b.i", followersCount: 700, isVerified: true),
         UserModel(name: "Muhammad Panji", userName: "Mhmd_Panji", followersCount: 1000, isVerified: true),
         UserModel(name: "Foto Kopi Keluarga", userName: "FC_Family", followersCount: 2000, isVerified: false)
     ]
@@ -39,10 +38,21 @@ struct customModelData: View {
                                 Text(items.name)
                                     .fontWeight(.semibold)
                                 
-                                Image(systemName: items.isVerified ? "checkmark.seal.fill" : "none" )
-                                    .imageScale(.small)
-                                    .foregroundColor(items.isVerified ? .blue : .red)
-                                
+                                // MARK: cara kesatu untuk if else statement
+//                                Image(systemName: items.isVerified ? "checkmark.seal.fill" : "none" )
+//                                    .imageScale(.small)
+//                                    .foregroundColor(items.isVerified ? .blue : .red)
+
+                                // MARK: cara kedua untuk if else statement
+                                if items.isVerified == true {
+                                    Image(systemName: "checkmark.seal.fill")
+                                        .imageScale(.small)
+                                        .foregroundStyle(Color.blue)
+                                }else {
+                                    Image(systemName: "none")
+                                        .imageScale(.small)
+                                        .foregroundStyle(Color.red)
+                                }
                                 
                             }
                             
